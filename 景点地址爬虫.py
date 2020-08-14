@@ -39,13 +39,13 @@ if __name__ == "__main__":
     db = connectDB()
     cursor = db.cursor()
 
-    adress = ""
+    adress = "上海"
 
     hrefs = []
 
     names = []
 
-    url = "https://www.tripadvisor.cn/Attractions-g294212-Activities-Beijing.html#FILTERED_LIST"
+    url = "https://www.tripadvisor.cn/Attractions-g308272-Activities-Shanghai.html#ATTRACTION_SORT_WRAPPER"
 
     text = getHTMLText(url)
 
@@ -58,9 +58,10 @@ if __name__ == "__main__":
         h2_tag = parent.find("h2")
         hrefs.append(a_tag.get("href"))
         names.append(h2_tag.string)
-    count = 54
+    count = 44
     for i in range(count):
-        url = "https://www.tripadvisor.cn/Attractions-g294212-Activities-oa"+  str(i*30) +"-Beijing.html#FILTERED_LIST"
+
+        url = "https://www.tripadvisor.cn/Attractions-g308272-Activities-oa"+  str(i*30) +"-Shanghai.html#FILTERED_LIST"
         text = getHTMLText(url)
         soup =BeautifulSoup(text,'html.parser')
         content =soup.find(id="FILTERED_LIST")
