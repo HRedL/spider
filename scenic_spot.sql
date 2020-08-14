@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80018
 File Encoding         : 65001
 
-Date: 2020-08-04 17:57:33
+Date: 2020-08-14 11:24:09
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -31,7 +31,7 @@ CREATE TABLE `scenic_spot` (
 -- ----------------------------
 -- Records of scenic_spot
 -- ----------------------------
-INSERT INTO 'scenic_spot' VALUES ('1', '北京', '/Attraction_Review-g294212-d325811-Reviews-Mutianyu_Great_Wall-Beijing.html', '',null);
+INSERT INTO `scenic_spot` VALUES ('1', '北京', '/Attraction_Review-g294212-d325811-Reviews-Mutianyu_Great_Wall-Beijing.html', '慕田峪长城', null);
 INSERT INTO `scenic_spot` VALUES ('2', '北京', '/Attraction_Review-g294212-d311538-Reviews-Summer_Palace_Yiheyuan-Beijing.html', '颐和园', null);
 INSERT INTO `scenic_spot` VALUES ('3', '北京', '/Attraction_Review-g294212-d311534-Reviews-Temple_of_Heaven-Beijing.html', '天坛公园', null);
 INSERT INTO `scenic_spot` VALUES ('4', '北京', '/Attraction_Review-g294212-d319086-Reviews-Forbidden_City_The_Palace_Museum-Beijing.html', '故宫博物院', null);
